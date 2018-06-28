@@ -7,25 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D09EDFC20E4DC87001D198D /* TotalPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D09EDFB20E4DC87001D198D /* TotalPageViewController.m */; };
+		2D5EB19F20C91AD700DE3E49 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5EB19920C91AD700DE3E49 /* ViewController.m */; };
+		2D5EB1A020C91AD700DE3E49 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5EB19B20C91AD700DE3E49 /* FirstViewController.m */; };
+		2D5EB1A120C91AD700DE3E49 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5EB19C20C91AD700DE3E49 /* SecondViewController.m */; };
+		2D5EB1A220C91AD700DE3E49 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5EB19D20C91AD700DE3E49 /* ThirdViewController.m */; };
+		2D5EB1A620C91B2800DE3E49 /* HeaderConfigView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5EB1A520C91B2800DE3E49 /* HeaderConfigView.m */; };
+		2D5EB1AA20C91B4B00DE3E49 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5EB1A820C91B4B00DE3E49 /* CustomTableViewCell.m */; };
+		2D5EB1AB20C91B4B00DE3E49 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5EB1A920C91B4B00DE3E49 /* CustomTableViewCell.xib */; };
 		2D62F01920C78F0B0095A85A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D62F01820C78F0B0095A85A /* AppDelegate.m */; };
-		2D62F01C20C78F0B0095A85A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D62F01B20C78F0B0095A85A /* ViewController.m */; };
 		2D62F01F20C78F0B0095A85A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D62F01D20C78F0B0095A85A /* Main.storyboard */; };
 		2D62F02120C78F0B0095A85A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D62F02020C78F0B0095A85A /* Assets.xcassets */; };
 		2D62F02420C78F0B0095A85A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D62F02220C78F0B0095A85A /* LaunchScreen.storyboard */; };
 		2D62F02720C78F0B0095A85A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D62F02620C78F0B0095A85A /* main.m */; };
+		2D62F03220C7907D0095A85A /* SegmentSubPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D62F03120C7907D0095A85A /* SegmentSubPageView.m */; };
+		2D62F03520C7B0A40095A85A /* QLSegmentTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D62F03420C7B0A40095A85A /* QLSegmentTitleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D09EDFA20E4DC87001D198D /* TotalPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPageViewController.h; sourceTree = "<group>"; };
+		2D09EDFB20E4DC87001D198D /* TotalPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPageViewController.m; sourceTree = "<group>"; };
+		2D5EB19720C91AD700DE3E49 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		2D5EB19820C91AD700DE3E49 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		2D5EB19920C91AD700DE3E49 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2D5EB19A20C91AD700DE3E49 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		2D5EB19B20C91AD700DE3E49 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		2D5EB19C20C91AD700DE3E49 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		2D5EB19D20C91AD700DE3E49 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		2D5EB19E20C91AD700DE3E49 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2D5EB1A420C91B2800DE3E49 /* HeaderConfigView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderConfigView.h; sourceTree = "<group>"; };
+		2D5EB1A520C91B2800DE3E49 /* HeaderConfigView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderConfigView.m; sourceTree = "<group>"; };
+		2D5EB1A720C91B4B00DE3E49 /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		2D5EB1A820C91B4B00DE3E49 /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		2D5EB1A920C91B4B00DE3E49 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		2D62F01420C78F0B0095A85A /* QLSegmentSubPages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QLSegmentSubPages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D62F01720C78F0B0095A85A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2D62F01820C78F0B0095A85A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2D62F01A20C78F0B0095A85A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2D62F01B20C78F0B0095A85A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2D62F01E20C78F0B0095A85A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D62F02020C78F0B0095A85A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D62F02320C78F0B0095A85A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D62F02520C78F0B0095A85A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D62F02620C78F0B0095A85A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D62F03020C7907D0095A85A /* SegmentSubPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentSubPageView.h; sourceTree = "<group>"; };
+		2D62F03120C7907D0095A85A /* SegmentSubPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentSubPageView.m; sourceTree = "<group>"; };
+		2D62F03320C7B0A40095A85A /* QLSegmentTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLSegmentTitleView.h; sourceTree = "<group>"; };
+		2D62F03420C7B0A40095A85A /* QLSegmentTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLSegmentTitleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D5EB19620C91AD700DE3E49 /* SubViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D5EB19720C91AD700DE3E49 /* FirstViewController.h */,
+				2D5EB19B20C91AD700DE3E49 /* FirstViewController.m */,
+				2D5EB19820C91AD700DE3E49 /* SecondViewController.h */,
+				2D5EB19C20C91AD700DE3E49 /* SecondViewController.m */,
+				2D5EB19A20C91AD700DE3E49 /* ThirdViewController.h */,
+				2D5EB19D20C91AD700DE3E49 /* ThirdViewController.m */,
+			);
+			path = SubViewControllers;
+			sourceTree = "<group>";
+		};
+		2D5EB1A320C91AF200DE3E49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D5EB1A420C91B2800DE3E49 /* HeaderConfigView.h */,
+				2D5EB1A520C91B2800DE3E49 /* HeaderConfigView.m */,
+				2D5EB1A720C91B4B00DE3E49 /* CustomTableViewCell.h */,
+				2D5EB1A820C91B4B00DE3E49 /* CustomTableViewCell.m */,
+				2D5EB1A920C91B4B00DE3E49 /* CustomTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2D62F00B20C78F0B0095A85A = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +109,15 @@
 		2D62F01620C78F0B0095A85A /* QLSegmentSubPages */ = {
 			isa = PBXGroup;
 			children = (
+				2D62F02F20C7904F0095A85A /* CustomView */,
 				2D62F01720C78F0B0095A85A /* AppDelegate.h */,
 				2D62F01820C78F0B0095A85A /* AppDelegate.m */,
-				2D62F01A20C78F0B0095A85A /* ViewController.h */,
-				2D62F01B20C78F0B0095A85A /* ViewController.m */,
+				2D5EB19E20C91AD700DE3E49 /* ViewController.h */,
+				2D5EB19920C91AD700DE3E49 /* ViewController.m */,
+				2D09EDFA20E4DC87001D198D /* TotalPageViewController.h */,
+				2D09EDFB20E4DC87001D198D /* TotalPageViewController.m */,
+				2D5EB19620C91AD700DE3E49 /* SubViewControllers */,
+				2D5EB1A320C91AF200DE3E49 /* Views */,
 				2D62F01D20C78F0B0095A85A /* Main.storyboard */,
 				2D62F02020C78F0B0095A85A /* Assets.xcassets */,
 				2D62F02220C78F0B0095A85A /* LaunchScreen.storyboard */,
@@ -69,6 +125,17 @@
 				2D62F02620C78F0B0095A85A /* main.m */,
 			);
 			path = QLSegmentSubPages;
+			sourceTree = "<group>";
+		};
+		2D62F02F20C7904F0095A85A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				2D62F03020C7907D0095A85A /* SegmentSubPageView.h */,
+				2D62F03120C7907D0095A85A /* SegmentSubPageView.m */,
+				2D62F03320C7B0A40095A85A /* QLSegmentTitleView.h */,
+				2D62F03420C7B0A40095A85A /* QLSegmentTitleView.m */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +198,7 @@
 			files = (
 				2D62F02420C78F0B0095A85A /* LaunchScreen.storyboard in Resources */,
 				2D62F02120C78F0B0095A85A /* Assets.xcassets in Resources */,
+				2D5EB1AB20C91B4B00DE3E49 /* CustomTableViewCell.xib in Resources */,
 				2D62F01F20C78F0B0095A85A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,9 +210,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D62F01C20C78F0B0095A85A /* ViewController.m in Sources */,
+				2D09EDFC20E4DC87001D198D /* TotalPageViewController.m in Sources */,
+				2D62F03220C7907D0095A85A /* SegmentSubPageView.m in Sources */,
+				2D5EB1A020C91AD700DE3E49 /* FirstViewController.m in Sources */,
+				2D5EB1A220C91AD700DE3E49 /* ThirdViewController.m in Sources */,
+				2D62F03520C7B0A40095A85A /* QLSegmentTitleView.m in Sources */,
+				2D5EB1A120C91AD700DE3E49 /* SecondViewController.m in Sources */,
 				2D62F02720C78F0B0095A85A /* main.m in Sources */,
+				2D5EB1A620C91B2800DE3E49 /* HeaderConfigView.m in Sources */,
 				2D62F01920C78F0B0095A85A /* AppDelegate.m in Sources */,
+				2D5EB1AA20C91B4B00DE3E49 /* CustomTableViewCell.m in Sources */,
+				2D5EB19F20C91AD700DE3E49 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

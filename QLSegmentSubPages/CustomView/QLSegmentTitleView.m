@@ -25,13 +25,14 @@
     if (self) {
         self.backgroundColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0];
         [self addSubview:self.titleScrollView];
-        [self addSubview:self.underlineView];
-        self.selectItemColor = [UIColor redColor];
-        self.normalItemColor = [UIColor blackColor];
-        self.titleTextFont = [UIFont systemFontOfSize:13.0];
-        self.underlineHeight = 2;
-        self.underlineWidthEqualText = YES;
-        self.selectedItemIndex = 0;
+        [self.titleScrollView addSubview:self.underlineView];
+        _selectItemColor = [UIColor redColor];
+        _normalItemColor = [UIColor blackColor];
+        _titleTextFont = [UIFont systemFontOfSize:13.0];
+        _underlineHeight = 2;
+        _underlineWidthEqualText = YES;
+        _selectedItemIndex = 0;
+        _autoCorrectItemPosition = YES;
     }
     
     return self;
@@ -72,8 +73,8 @@
                 [titleBtn setTitle:[NSString stringWithFormat:@"%@", [headList objectAtIndex:i]] forState:UIControlStateNormal];
                 [self.titleScrollView addSubview:titleBtn];
             }
-            [self setItemsCommonUIState];
         }
+        [self setItemsCommonUIState];
     }
 }
 
@@ -98,12 +99,25 @@
                     }
                     CGFloat underlineOriginX = self.itemWidth * i + (self.itemWidth - underlineWidth) / 2;
                     self.underlineView.frame = CGRectMake(underlineOriginX, CGRectGetHeight(self.frame) - self.underlineHeight, underlineWidth, self.underlineHeight);
+                    [self currectTitleScrollViewOffsetX];   //控制选中的item居中显示
                 } else {
                     [titleBtn setTitleColor:self.normalItemColor forState:UIControlStateNormal];
                 }
             }
         }
     }
+}
+
+//控制选中item的居中显示
+- (void)currectTitleScrollViewOffsetX {
+    CGFloat needOffset = 0; //当前需要进行的位置偏移
+    needOffset = (self.selectedItemIndex + 1) * self.itemWidth - self.itemWidth / 2 - CGRectGetWidth(self.titleScrollView.frame) / 2;
+    if (needOffset < 0) {
+        needOffset = 0;
+    } else if (needOffset > self.titleScrollView.contentSize.width - CGRectGetWidth(self.titleScrollView.frame)) {
+        needOffset = self.titleScrollView.contentSize.width - CGRectGetWidth(self.titleScrollView.frame);
+    }
+    [self.titleScrollView setContentOffset:CGPointMake(needOffset, 0) animated:YES];
 }
 
 //计算适配item的宽度值
@@ -125,6 +139,7 @@
         if (resultWidth * self.titlesArray.count < CGRectGetWidth([UIScreen mainScreen].bounds)) {    //title的宽度没有屏幕宽，则以屏幕的宽度放所有的item
             resultWidth = CGRectGetWidth([UIScreen mainScreen].bounds) / self.titlesArray.count;
         }
+        [self.titleScrollView setContentSize:CGSizeMake(resultWidth * self.titlesArray.count, CGRectGetHeight(self.frame))];
     }
     
     return resultWidth;
@@ -150,6 +165,7 @@
     _itemWidth = itemWidth;
     if (self.titlesArray && self.titlesArray.count > 0) {
         _itemWidth = [self calculateItemWidthWithOriginalWidth:itemWidth];
+        [self setItemsCommonUIState];
     }
 }
 
@@ -175,6 +191,11 @@
 
 - (void)setUnderlineWidthEqualText:(BOOL)underlineWidthEqualText {
     _underlineWidthEqualText = underlineWidthEqualText;
+    [self setItemsCommonUIState];
+}
+
+- (void)setAutoCorrectItemPosition:(BOOL)autoCorrectItemPosition {
+    _autoCorrectItemPosition = autoCorrectItemPosition;
     [self setItemsCommonUIState];
 }
 

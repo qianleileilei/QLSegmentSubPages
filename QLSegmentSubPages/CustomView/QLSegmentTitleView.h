@@ -55,6 +55,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) CGFloat itemWidth;
 
+/** auto Correct the select item position to middle，default is 'YES'  */
+@property (nonatomic, assign) BOOL autoCorrectItemPosition;
+
 /** the underline height, default is '2' */
 @property (nonatomic, assign) NSUInteger underlineHeight;
 

@@ -29,11 +29,11 @@ NS_ASSUME_NONNULL_BEGIN
 /** 多页面的头视图 */
 @property (nonatomic, strong, nullable) UIView *headerView;
 
-/** headerView的高度 */
-@property (nonatomic, assign) CGFloat headerViewHeight;
-
 /** subpage title  */
 @property (nonatomic, strong, nullable) QLSegmentTitleView *segmentTitleView;
+
+/** segmentTitleView height */
+@property (nonatomic, assign) CGFloat titleViewHeight;
 
 /**
  存放配置子页面的数组

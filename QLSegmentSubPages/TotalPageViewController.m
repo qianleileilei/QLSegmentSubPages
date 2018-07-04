@@ -18,10 +18,12 @@
 #import "SeventhViewController.h"
 #import "EighthViewController.h"
 #import "NinthViewController.h"
+#import "HeaderConfigView.h"
 
 @interface TotalPageViewController () <SegmentSubPageDelegate>
 
 @property (nonatomic, strong) SegmentSubPageView *configSubPageView;
+@property (nonatomic, strong) HeaderConfigView *headerView;
 
 @end
 
@@ -90,7 +92,30 @@
 
 //配置存在headerView的效果
 - (void)configPageEffectHeaderViewType {
-    
+    self.configSubPageView.segmentTitleView.titlesArray = @[@"第一页", @"第二页", @"第三页"];
+    self.configSubPageView.titleViewHeight = 35.0;
+    //初始化子页面的配置
+    __weak __typeof(self) weakSelf = self;
+    ConfigSubControllerBlock firstPage = ^(){
+        __strong __typeof(weakSelf) strongSelf = weakSelf;
+        FirstViewController *firstViewController = [[FirstViewController alloc] init];
+        [strongSelf addChildViewController:firstViewController];
+        return firstViewController;
+    };
+    ConfigSubControllerBlock secondPage = ^(){
+        __strong __typeof(weakSelf) strongSelf = weakSelf;
+        SecondViewController *secondViewController = [[SecondViewController alloc] init];
+        [strongSelf addChildViewController:secondViewController];
+        return secondViewController;
+    };
+    ConfigSubControllerBlock thirdPage = ^(){
+        __strong __typeof(weakSelf) strongSelf = weakSelf;
+        ThirdViewController *thirdViewController = [[ThirdViewController alloc] init];
+        [strongSelf addChildViewController:thirdViewController];
+        return thirdViewController;
+    };
+    self.configSubPageView.registerSubPages = [NSArray arrayWithObjects:firstPage, secondPage, thirdPage, nil];
+    self.configSubPageView.headerView = self.headerView;
 }
 
 //配置动态headerView的效果
@@ -174,6 +199,14 @@
     }
     
     return _configSubPageView;
+}
+
+- (HeaderConfigView *)headerView {
+    if (!_headerView) {
+        _headerView = [[HeaderConfigView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 160)];
+    }
+    
+    return _headerView;
 }
 
 @end

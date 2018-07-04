@@ -8,6 +8,8 @@
 
 #import "FirstViewController.h"
 #import "CustomTableViewCell.h"
+#import "Masonry.h"
+#import "MJRefresh.h"
 
 static NSString *CellIdentifier = @"CustomTableViewCell";
 
@@ -25,6 +27,15 @@ static NSString *CellIdentifier = @"CustomTableViewCell";
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).with.insets(UIEdgeInsetsMake(0, 0, 0, 0));
+    }];
+    __weak __typeof(self) weakSelf = self;
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        __strong __typeof(weakSelf) strongSelf = weakSelf;
+        sleep(1.5);
+        [strongSelf.tableView.mj_header endRefreshing];
+    }];
 }
 
 #pragma mark - UITableViewDelegate
@@ -55,10 +66,11 @@ static NSString *CellIdentifier = @"CustomTableViewCell";
 #pragma mark - setter and getter
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - 104) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.rowHeight = 60;
+        _tableView.tag = 101;
         [_tableView registerNib:[UINib nibWithNibName:@"CustomTableViewCell" bundle:nil] forCellReuseIdentifier:CellIdentifier];
     }
     

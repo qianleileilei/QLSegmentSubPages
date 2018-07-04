@@ -75,7 +75,7 @@
         _button3.frame = CGRectMake((CGRectGetWidth(self.view.frame) - 260) / 2, CGRectGetMaxY(self.button2.frame) + 20, 260, 40);
         _button3.backgroundColor = [UIColor redColor];
         _button3.tag = kPageEffectHeaderViewType;
-        [_button3 setTitle:@"存在headerView的效果" forState:UIControlStateNormal];
+        [_button3 setTitle:@"headerView的效果" forState:UIControlStateNormal];
         [_button3 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_button3 addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
     }

@@ -67,6 +67,12 @@ NS_ASSUME_NONNULL_BEGIN
 /** the delegate for view event */
 @property (nonatomic, weak) id<SegmentTitleViewDelegate> delegate;
 
+/**
+ 设置item的UI显示
+ */
+- (void)setItemsCommonUIState;
+
 @end
+
 
 NS_ASSUME_NONNULL_END

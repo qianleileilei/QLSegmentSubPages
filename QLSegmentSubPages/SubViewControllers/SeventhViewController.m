@@ -8,6 +8,7 @@
 
 #import "SeventhViewController.h"
 #import "CustomTableViewCell.h"
+#import "Masonry.h"
 
 static NSString *CellIdentifier = @"CustomTableViewCell";
 
@@ -25,6 +26,9 @@ static NSString *CellIdentifier = @"CustomTableViewCell";
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).with.insets(UIEdgeInsetsMake(0, 0, 0, 0));
+    }];
 }
 
 
@@ -56,7 +60,7 @@ static NSString *CellIdentifier = @"CustomTableViewCell";
 #pragma mark - setter and getter
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - 104) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.rowHeight = 60;

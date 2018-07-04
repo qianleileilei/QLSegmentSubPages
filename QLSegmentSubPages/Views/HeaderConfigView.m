@@ -10,7 +10,7 @@
 
 @interface HeaderConfigView ()
 
-@property (nonatomic, strong) UIButton *headerButton;
+@property (nonatomic, strong) UILabel *headerLabel;
 
 @end
 
@@ -19,28 +19,24 @@
 #pragma mark - life cycle
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self addSubview:self.headerButton];
+        self.backgroundColor = [UIColor greenColor];
+        [self addSubview:self.headerLabel];
     }
     
     return self;
 }
 
-#pragma mark - event response
-- (void)buttonClicked:(UIButton *)sender {
-    NSLog(@"button touch up inside");
-}
-
 #pragma mark - setter and getter
-- (UIButton *)headerButton {
-    if (!_headerButton) {
-        _headerButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _headerButton.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
-        [_headerButton setTitle:@"header button" forState:UIControlStateNormal];
-        _headerButton.backgroundColor = [UIColor blueColor];
-        [_headerButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+- (UILabel *)headerLabel {
+    if (!_headerLabel) {
+        _headerLabel = [[UILabel alloc] init];
+        _headerLabel.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
+        _headerLabel.font = [UIFont systemFontOfSize:16.0];
+        _headerLabel.textAlignment = NSTextAlignmentCenter;
+        _headerLabel.text = @"header view";
     }
     
-    return _headerButton;
+    return _headerLabel;
 }
 
 @end

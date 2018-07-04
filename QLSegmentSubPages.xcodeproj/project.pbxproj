@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BCBFB0923277F3C12BDE685 /* libPods-QLSegmentSubPages.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF276BDF9820D4B6D01F8F98 /* libPods-QLSegmentSubPages.a */; };
 		2D09EDFC20E4DC87001D198D /* TotalPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D09EDFB20E4DC87001D198D /* TotalPageViewController.m */; };
 		2D3C960E20E5C73E00AB2B6D /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3C960D20E5C73E00AB2B6D /* FourthViewController.m */; };
 		2D3C961120E5C75600AB2B6D /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3C961020E5C75600AB2B6D /* FifthViewController.m */; };
@@ -14,6 +15,7 @@
 		2D3C961720E5C78200AB2B6D /* SeventhViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3C961620E5C78200AB2B6D /* SeventhViewController.m */; };
 		2D3C961A20E5C79B00AB2B6D /* EighthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3C961920E5C79B00AB2B6D /* EighthViewController.m */; };
 		2D3C961D20E5C7BA00AB2B6D /* NinthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3C961C20E5C7BA00AB2B6D /* NinthViewController.m */; };
+		2D4C305C20EA171900810E38 /* 9KnqqgZBFe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D4C305B20EA171800810E38 /* 9KnqqgZBFe.jpg */; };
 		2D5EB19F20C91AD700DE3E49 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5EB19920C91AD700DE3E49 /* ViewController.m */; };
 		2D5EB1A020C91AD700DE3E49 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5EB19B20C91AD700DE3E49 /* FirstViewController.m */; };
 		2D5EB1A120C91AD700DE3E49 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5EB19C20C91AD700DE3E49 /* SecondViewController.m */; };
@@ -31,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A80B52B1B5A781C8EECC0A6 /* Pods-QLSegmentSubPages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLSegmentSubPages.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLSegmentSubPages/Pods-QLSegmentSubPages.release.xcconfig"; sourceTree = "<group>"; };
 		2D09EDFA20E4DC87001D198D /* TotalPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalPageViewController.h; sourceTree = "<group>"; };
 		2D09EDFB20E4DC87001D198D /* TotalPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalPageViewController.m; sourceTree = "<group>"; };
 		2D3C960C20E5C73E00AB2B6D /* FourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		2D3C961920E5C79B00AB2B6D /* EighthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EighthViewController.m; sourceTree = "<group>"; };
 		2D3C961B20E5C7BA00AB2B6D /* NinthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NinthViewController.h; sourceTree = "<group>"; };
 		2D3C961C20E5C7BA00AB2B6D /* NinthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NinthViewController.m; sourceTree = "<group>"; };
+		2D4C305B20EA171800810E38 /* 9KnqqgZBFe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9KnqqgZBFe.jpg; sourceTree = "<group>"; };
 		2D5EB19720C91AD700DE3E49 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		2D5EB19820C91AD700DE3E49 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		2D5EB19920C91AD700DE3E49 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 		2D62F03120C7907D0095A85A /* SegmentSubPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentSubPageView.m; sourceTree = "<group>"; };
 		2D62F03320C7B0A40095A85A /* QLSegmentTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLSegmentTitleView.h; sourceTree = "<group>"; };
 		2D62F03420C7B0A40095A85A /* QLSegmentTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLSegmentTitleView.m; sourceTree = "<group>"; };
+		357D659BB4F92572F235C8D9 /* Pods-QLSegmentSubPages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLSegmentSubPages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QLSegmentSubPages/Pods-QLSegmentSubPages.debug.xcconfig"; sourceTree = "<group>"; };
+		CF276BDF9820D4B6D01F8F98 /* libPods-QLSegmentSubPages.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QLSegmentSubPages.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BCBFB0923277F3C12BDE685 /* libPods-QLSegmentSubPages.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +132,8 @@
 			children = (
 				2D62F01620C78F0B0095A85A /* QLSegmentSubPages */,
 				2D62F01520C78F0B0095A85A /* Products */,
+				6251FE7170D89825C6B1FA85 /* Pods */,
+				4EFD447DE2C2A4B41A371454 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +161,7 @@
 				2D62F02020C78F0B0095A85A /* Assets.xcassets */,
 				2D62F02220C78F0B0095A85A /* LaunchScreen.storyboard */,
 				2D62F02520C78F0B0095A85A /* Info.plist */,
+				2D4C305B20EA171800810E38 /* 9KnqqgZBFe.jpg */,
 				2D62F02620C78F0B0095A85A /* main.m */,
 			);
 			path = QLSegmentSubPages;
@@ -168,6 +178,23 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		4EFD447DE2C2A4B41A371454 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF276BDF9820D4B6D01F8F98 /* libPods-QLSegmentSubPages.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6251FE7170D89825C6B1FA85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				357D659BB4F92572F235C8D9 /* Pods-QLSegmentSubPages.debug.xcconfig */,
+				2A80B52B1B5A781C8EECC0A6 /* Pods-QLSegmentSubPages.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D62F02A20C78F0B0095A85A /* Build configuration list for PBXNativeTarget "QLSegmentSubPages" */;
 			buildPhases = (
+				D54F758560F9333BB36192A5 /* [CP] Check Pods Manifest.lock */,
 				2D62F01020C78F0B0095A85A /* Sources */,
 				2D62F01120C78F0B0095A85A /* Frameworks */,
 				2D62F01220C78F0B0095A85A /* Resources */,
+				5AAAD84E0B82B054CAF08E99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D62F02420C78F0B0095A85A /* LaunchScreen.storyboard in Resources */,
+				2D4C305C20EA171900810E38 /* 9KnqqgZBFe.jpg in Resources */,
 				2D62F02120C78F0B0095A85A /* Assets.xcassets in Resources */,
 				2D5EB1AB20C91B4B00DE3E49 /* CustomTableViewCell.xib in Resources */,
 				2D62F01F20C78F0B0095A85A /* Main.storyboard in Resources */,
@@ -234,6 +264,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AAAD84E0B82B054CAF08E99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QLSegmentSubPages/Pods-QLSegmentSubPages-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLSegmentSubPages/Pods-QLSegmentSubPages-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D54F758560F9333BB36192A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QLSegmentSubPages-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D62F01020C78F0B0095A85A /* Sources */ = {
@@ -388,6 +457,7 @@
 		};
 		2D62F02B20C78F0B0095A85A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 357D659BB4F92572F235C8D9 /* Pods-QLSegmentSubPages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -401,6 +471,7 @@
 		};
 		2D62F02C20C78F0B0095A85A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A80B52B1B5A781C8EECC0A6 /* Pods-QLSegmentSubPages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
